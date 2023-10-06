@@ -11794,11 +11794,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-.LH-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.LH-item {
-  flex-basis: 200;
+/* Style for the separator element */
+.separator {
+  margin: 0 22.9%; /* Adjust the margin to set the desired gap between buttons */
 }
