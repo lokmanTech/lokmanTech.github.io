@@ -1,0 +1,14 @@
+/* css/print.css */
+body {
+    font-family: "Century Gothic", "Gotham", "Futura", "Avenir", "Proxima Nova", "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.printable-content {
+    background-color: #fff; /* Set a white background for the printable content */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for better separation */
+}
+
+/* Add additional print styles as needed */

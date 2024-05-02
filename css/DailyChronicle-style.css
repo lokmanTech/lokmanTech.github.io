@@ -1,0 +1,35 @@
+body {
+    font-family: "Century Gothic", "Gotham", "Futura", "Avenir", "Proxima Nova", "Segoe UI", sans-serif;
+}
+
+/*Main Content = mc */
+
+.mc-01 {
+    text-align: center;
+}
+
+/* Workspace Manager = wm / Task Manger = tm / Ledger = l / Journal Manager = jm / Footer = f / Print = p */
+.wm-01, .tm-01, .l-01, .jm-01, .f-01, .p-01{
+    text-align: center;
+}
+
+/* Target the input element by its ID */
+#projectInput, #projectType, #timeInHourInput, #timeInMinuteInput, 
+#timeInMeridiemInput, #timeOutHourInput, #timeOutMinuteInput, #timeOutMeridiemInput, #statusInput,
+#appointmentWithInput, #appointmentWithInput, #workspaceList, #addWorkspaceEntry, #taskInput,
+#transactionType, #journalHourInput, #journalMinuteInput, #journalMeridiemInput, #journalInput{
+    /* Apply the same font styles as the input text */
+    font-family: inherit;
+    font-size: inherit;
+    /* Match the color to the input text color */
+    color: inherit;
+    /* Adjust the opacity to make it less prominent */
+    opacity: 0.3;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: darkgrey;
+}
+/* Target the fieldset element */
