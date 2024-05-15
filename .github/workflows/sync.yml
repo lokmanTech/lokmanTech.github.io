@@ -3,7 +3,7 @@ name: Update fintrek in lokmanTech.github.io
 on:
   push:
     branches:
-      - main  # Adjust this to your main branch or relevant branch
+      - main
 
 jobs:
   update_fintrek:
@@ -16,6 +16,7 @@ jobs:
         repository: lokmanTech/fintrek
         path: fintrek
         token: ${{ secrets.GH_PAT }}
+        
     - uses: actions/checkout@v2
       with:
         repository: lokmanTech/lokmanTech.github.io
