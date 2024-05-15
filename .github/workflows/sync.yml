@@ -3,7 +3,7 @@ name: Sync to GitHub Pages
 on:
   push:
     branches:
-      - main  # or the branch you are working on
+      - main 
 
 jobs:
   deploy:
@@ -11,9 +11,9 @@ jobs:
 
     steps:
       - name: Use Node.js version 20
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '20.x'
 
       - name: Checkout project repository
         uses: actions/checkout@v2
@@ -26,17 +26,14 @@ jobs:
           git config --global user.name "lokmanTech"
           git config --global user.email "lhakim.nazri@gmail.com"
 
-      - name: Check deployment directory contents
-        run: ls -R deployment/
-
       - name: Checkout GitHub Pages repository
         run: |
-          git clone https://github.com/lokmanTech/lokmanTech.github.io.git deployment/public
+          git clone https://github.com/lokmanTech/lokmanTech.github.io.git deployment
 
       - name: Sync files
         run: |
-          rsync -av --delete project/fintrek/ deployment/public/
-          cd deployment/public
+          rsync -av --delete project/fintrek/fintrek/ deployment/fintrek/
+          cd deployment
           git add .
           git commit -m "Auto-sync updates"
           git push origin main
