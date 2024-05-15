@@ -27,15 +27,17 @@ jobs:
           git config --global user.email "lhakim.nazri@gmail.com"
 
       - name: Checkout GitHub Pages repository
-        run: |
-          git clone https://github.com/lokmanTech/lokmanTech.github.io.git deployment
+        uses: actions/checkout@v4
+        with:
+          repository: lokmanTech/lokmanTech.github.io
+          path: deployment
 
       - name: Ensure fintrek directory exists in deployment
         run: mkdir -p deployment/fintrek
 
       - name: Sync files
         run: |
-          rsync -av --delete project/fintrek/ deployment/fintrek/
+          rsync -av --delete project/fintrek/fintrek/ deployment/fintrek/
           cd deployment
           git add .
           git commit -m "Auto-sync updates"
