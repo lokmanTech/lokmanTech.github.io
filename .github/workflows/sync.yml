@@ -1,29 +1,36 @@
-name: Update Permalink
+name: Update fintrek in lokmanTech.github.io
 
 on:
   push:
     branches:
-      - main  # Change this to your main branch name if different
+      - main  # Adjust this to your main branch or relevant branch
 
 jobs:
-  update_permalink:
+  update_fintrek:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout fintrek and lokmanTech.github.io repositories
+      uses: actions/checkout@v2
+      with:
+        repository: lokmanTech/fintrek
+        path: fintrek
+        token: ${{ secrets.GH_PAT }}
+    - uses: actions/checkout@v2
+      with:
+        repository: lokmanTech/lokmanTech.github.io
+        path: lokmanTech.github.io
+        token: ${{ secrets.GH_PAT }}
         
-      - name: Update Permalink
-        run: |
-          # Fetch the latest commit hash from the first permalink
-          COMMIT_HASH=$(curl -s https://api.github.com/repos/lokmanTech/FinTrek/commits/main | jq -r '.sha')
-
-          # Update the second permalink
-          curl -X POST \
-            -H "Authorization: token YOUR_GITHUB_TOKEN" \
-            -H "Content-Type: application/json" \
-            -d '{"sha": "'"$COMMIT_HASH"'"}' \
-            https://api.github.com/repos/lokmanTech/lokmanTech.github.io/branches/main
-
-          # Print success message
-          echo "Second permalink updated successfully."
+    - name: Copy or synchronize changes
+      run: |
+        # Add commands here to copy or synchronize changes from fintrek/fintrek to lokmanTech.github.io/fintrek
+        
+    - name: Commit and push changes
+      run: |
+        cd lokmanTech.github.io
+        git config --global user.email "lhakim.nazri@gmail.com"
+        git config --global user.name "lokmanTech"
+        git add .
+        git commit -m "Update fintrek"
+        git push
