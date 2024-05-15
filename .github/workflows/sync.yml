@@ -44,4 +44,4 @@ jobs:
           git config user.name "lokmanTech"
           git add .
           git commit -m "Auto-sync updates" || echo "No changes to commit"
-          git push https://${GIT_AUTH_TOKEN}@github.com/lokmanTech/lokmanTech.github.io.git main --force-with-lease --quiet
+          git push 
