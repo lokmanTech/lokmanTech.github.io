@@ -3,7 +3,7 @@ name: Sync to GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   deploy:
@@ -18,7 +18,7 @@ jobs:
       - name: Checkout project repository
         uses: actions/checkout@v4
         with:
-          repository: lokmanTech/fintrek/fintrek
+          repository: lokmanTech/fintrek
           path: project
 
       - name: Configure git
@@ -29,16 +29,18 @@ jobs:
       - name: Checkout GitHub Pages repository
         uses: actions/checkout@v4
         with:
-          repository: lokmanTech/lokmanTech.github.io/fintrek
+          repository: lokmanTech/lokmanTech.github.io
           path: deployment
 
       - name: Ensure fintrek directory exists in deployment
         run: mkdir -p deployment/fintrek
 
       - name: Sync files
+        run: rsync -av --delete project/fintrek/ deployment/fintrek/
+
+      - name: Commit and push changes
         run: |
-          rsync -av --delete project deployment
-          cd deployment
+          cd deployment/fintrek
           git add .
-          git commit -m "Auto-sync updates"
+          git commit -m "Auto-sync updates" || echo "No changes to commit"
           git push origin main
