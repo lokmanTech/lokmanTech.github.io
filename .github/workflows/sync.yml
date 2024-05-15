@@ -39,6 +39,8 @@ jobs:
         run: rsync -av --delete project/fintrek/ deployment/fintrek/
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd deployment/fintrek
           git add .
