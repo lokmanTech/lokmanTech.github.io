@@ -1,0 +1,34 @@
+name: Sync to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or the branch you are working on
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout project repository
+        uses: actions/checkout@v2
+        with:
+          repository: lokmanTech/fintrek
+          path: project
+
+      - name: Configure git
+        run: |
+          git config --global user.name "lokmanTech"
+          git config --global user.email "lhakim.nazri@gmail.com"
+
+      - name: Checkout GitHub Pages repository
+        run: |
+          git clone https://github.com/lokmanTech/lokmanTech.github.io.git deployment
+
+      - name: Sync files
+        run: |
+          rsync -av --delete project/fintrek/ deployment/
+          cd deployment
+          git add .
+          git commit -m "Auto-sync updates"
+          git push origin main
