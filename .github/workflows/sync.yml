@@ -34,16 +34,11 @@ jobs:
         run: |
           rsync -av --delete project/fintrek/ deployment/fintrek/
 
-      - name: Debug GH_PAT
-        run: echo "GH_PAT: ${{ secrets.GH_PAT }}"
-
       - name: Commit and push changes
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           cd deployment/fintrek
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add .
           git commit -m "Auto-sync updates" || echo "No changes to commit"
-          git push https://$GH_PAT@github.com/lokmanTech/lokmanTech.github.io.git main
+          git push https://github.com/lokmanTech/lokmanTech.github.io.git main --force-with-lease --quiet
