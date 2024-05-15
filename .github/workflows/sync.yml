@@ -26,14 +26,17 @@ jobs:
           git config --global user.name "lokmanTech"
           git config --global user.email "lhakim.nazri@gmail.com"
 
+      - name: Check deployment directory contents
+        run: ls -R deployment/
+
       - name: Checkout GitHub Pages repository
         run: |
-          git clone https://github.com/lokmanTech/lokmanTech.github.io.git deployment
+          git clone https://github.com/lokmanTech/lokmanTech.github.io.git deployment/public
 
       - name: Sync files
         run: |
-          rsync -av --delete project/fintrek/ deployment/
-          cd deployment
+          rsync -av --delete project/fintrek/ deployment/public/
+          cd deployment/public
           git add .
           git commit -m "Auto-sync updates"
           git push origin main
