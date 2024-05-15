@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    env:
+      GIT_AUTH_TOKEN: ${{ secrets.GH_PAT }}
+
     steps:
       - name: Checkout project repository
         uses: actions/checkout@v2
@@ -41,4 +44,4 @@ jobs:
           git config user.name "GitHub Action"
           git add .
           git commit -m "Auto-sync updates" || echo "No changes to commit"
-          git push https://github.com/lokmanTech/lokmanTech.github.io.git main --force-with-lease --quiet
+          git push https://${GIT_AUTH_TOKEN}@github.com/lokmanTech/lokmanTech.github.io.git main --force-with-lease --quiet
