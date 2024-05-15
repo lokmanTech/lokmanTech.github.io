@@ -18,7 +18,7 @@ jobs:
       - name: Checkout project repository
         uses: actions/checkout@v4
         with:
-          repository: lokmanTech/fintrek
+          repository: lokmanTech/fintrek/fintrek
           path: project
 
       - name: Configure git
@@ -29,7 +29,7 @@ jobs:
       - name: Checkout GitHub Pages repository
         uses: actions/checkout@v4
         with:
-          repository: lokmanTech/lokmanTech.github.io
+          repository: lokmanTech/lokmanTech.github.io/fintrek
           path: deployment
 
       - name: Ensure fintrek directory exists in deployment
@@ -37,7 +37,7 @@ jobs:
 
       - name: Sync files
         run: |
-          rsync -av --delete project/fintrek/fintrek/ deployment/fintrek/
+          rsync -av --delete project deployment
           cd deployment
           git add .
           git commit -m "Auto-sync updates"
