@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GIT_AUTH_TOKEN: ${{ secrets.ENV_SECRET }}
+      GIT_AUTH_TOKEN: ${{ secrets.GH_PAT }}
+      ENV_SECRET: ${{ secrets.ENV_SECRET }}
+      GH_SECRETBOT: ${{ secrets.GH_SECRETBOT }}
 
     steps:
       - name: Checkout project repository
