@@ -9,9 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    env:
-      GIT_AUTH_TOKEN: ${{ secrets.GH_PAT }}
-
     steps:
       - name: Checkout project repository
         uses: actions/checkout@v2
@@ -38,10 +35,12 @@ jobs:
           rsync -av --delete project/fintrek/ deployment/fintrek/
 
       - name: Commit and push changes
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           cd deployment/fintrek
-          git config user.email "lhakim.nazri@gmail.com"
-          git config user.name "lokmanTech"
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git add .
           git commit -m "Auto-sync updates" || echo "No changes to commit"
-          git push 
+          git push https://${GH_PAT}@github.com/lokmanTech/lokmanTech.github.io.git main --force-with-lease --quiet
