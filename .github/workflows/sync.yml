@@ -1,4 +1,4 @@
-name: Sync to GitHub Pages
+name: Deploy Web App
 
 on:
   push:
@@ -9,41 +9,27 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    env:
-      GIT_AUTH_TOKEN: ${{ secrets.GH_PAT }}
-      ENV_SECRET: ${{ secrets.ENV_SECRET }}
-      GH_SECRETBOT: ${{ secrets.GH_SECRETBOT }}
-
     steps:
-      - name: Checkout project repository
+      - name: Checkout Code - Source Repository
         uses: actions/checkout@v2
-        with:
-          repository: lokmanTech/fintrek
-          path: project
 
-      - name: Configure git
+      - name: Delete Existing Files in Website Pages Repository
         run: |
-          git config --global user.name "lokmanTech"
-          git config --global user.email "lhakim.nazri@gmail.com"
+          rm -rf lokmanTech/lokmanTech.github.io/fintrek
 
-      - name: Checkout GitHub Pages repository
-        uses: actions/checkout@v2
-        with:
-          repository: lokmanTech/lokmanTech.github.io
-          path: deployment
-
-      - name: Ensure fintrek directory exists in deployment
-        run: mkdir -p deployment/fintrek
-
-      - name: Sync files
+      - name: Create Sub-folder in Website Pages Repository
         run: |
-          rsync -av --delete project/fintrek/ deployment/fintrek/
+          mkdir -p lokmanTech/lokmanTech.github.io/fintrek
 
-      - name: Commit and push changes
+      - name: Copy Files from Source Repository
         run: |
-          cd deployment/fintrek
-          git config user.email "lhakim.nazri@gmail.com"
-          git config user.name "lokmanTech"
+          cp -r lokmanTech/fintrek/fintrek lokmanTech/lokmanTech.github.io/fintrek
+
+      - name: Commit Changes
+        run: |
+          cd lokmanTech/lokmanTech.github.io/fintrek
           git add .
-          git commit -m "Auto-sync updates" || echo "No changes to commit"
-          git push https://${GIT_AUTH_TOKEN}@github.com/lokmanTech/lokmanTech.github.io.git main --force-with-lease --quiet
+          git commit -m "Automated deployment"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
