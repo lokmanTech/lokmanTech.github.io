@@ -1,4 +1,4 @@
-name: Deploy Web App
+name: Sync to GitHub Pages
 
 on:
   push:
@@ -10,26 +10,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code - Source Repository
+      - name: Checkout fintrek repository
         uses: actions/checkout@v2
+        with:
+          repository: lokmanTech/fintrek
+          path: project
 
-      - name: Delete Existing Files in Website Pages Repository
+      - name: Configure Git
         run: |
-          rm -rf lokmanTech/lokmanTech.github.io/fintrek
+          git config --global user.name "lokmanTech"
+          git config --global user.email "lhakim.nazri@gmail.com"
 
-      - name: Create Sub-folder in Website Pages Repository
-        run: |
-          mkdir -p lokmanTech/lokmanTech.github.io/fintrek
+      - name: Checkout GitHub Pages repository
+        uses: actions/checkout@v2
+        with:
+          repository: lokmanTech/lokmanTech.github.io
+          path: lokmanTech.github.io
 
-      - name: Copy Files from Source Repository
-        run: |
-          cp -r lokmanTech/fintrek/fintrek lokmanTech/lokmanTech.github.io/fintrek
+      - name: Ensure fintrek directory exists in deployment
+        run: mkdir -p lokmanTech.github.io/fintrek
 
-      - name: Commit Changes
+      - name: Sync files
         run: |
-          cd lokmanTech/lokmanTech.github.io/fintrek
-          git add .
-          git commit -m "Automated deployment"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          rsync -av --delete project/fintrek lokmanTech.github.io/fintrek/
+
+      - name: Commit and push changes
+        run: |
+          cd lokmanTech.github.io
+          git add fintrek
+          git commit -m "Auto-sync updates" || echo "No changes to commit"
+          git push https://${{ secrets.GH_PAT }}@github.com/lokmanTech/lokmanTech.github.io.git main
