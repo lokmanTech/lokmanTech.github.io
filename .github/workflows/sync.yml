@@ -9,28 +9,30 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    env:
-      GIT_AUTH_TOKEN: ${{ secrets.GH_PAT }}
-
     steps:
-      - name: Checkout project repository
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          
+      - name: Checkout fintrek repository
         uses: actions/checkout@v4
         with:
           repository: lokmanTech/fintrek
           path: project
 
-      - name: Configure git
-        run: |
-          git config --global user.name "lokmanTech"
-          git config --global user.email "lhakim.nazri@gmail.com"
-
-      - name: Checkout GitHub Pages repository
+      - name: Checkout website repository
         uses: actions/checkout@v4
         with:
           repository: lokmanTech/lokmanTech.github.io
           path: deployment
 
-      - name: Ensure fintrek directory exists in deployment
+      - name: Configure Git
+        run: |
+          git config --global user.name "lokmanTech"
+          git config --global user.email "lhakim.nazri@gmail.com"
+
+      - name: Ensure fintrek directory exists in lokmanTech.github.io
         run: mkdir -p deployment/fintrek
 
       - name: Sync files
@@ -40,8 +42,6 @@ jobs:
       - name: Commit and push changes
         run: |
           cd deployment/fintrek
-          git config user.email "lhakim.nazri@gmail.com"
-          git config user.name "lokmanTech"
-          git add .
+          git add
           git commit -m "Auto-sync updates" || echo "No changes to commit"
-          git push https://${GIT_AUTH_TOKEN}@github.com/lokmanTech/lokmanTech.github.io.git main --force-with-lease --quiet
+          git push https://${{ secrets.GH_PAT }}@github.com/lokmanTech/lokmanTech.github.io.git main
