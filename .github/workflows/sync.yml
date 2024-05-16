@@ -14,25 +14,19 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: lokmanTech/fintrek
-          path: project
+          path: fintrek
 
       - name: Configure Git
         run: |
           git config --global user.name "lokmanTech"
           git config --global user.email "lhakim.nazri@gmail.com"
 
-      - name: Checkout GitHub Pages repository
-        uses: actions/checkout@v2
-        with:
-          repository: lokmanTech/lokmanTech.github.io
-          path: lokmanTech.github.io
-
-      - name: Ensure fintrek directory exists in deployment
+      - name: Ensure fintrek directory exists in lokmanTech.github.io
         run: mkdir -p lokmanTech.github.io/fintrek
 
       - name: Sync files
         run: |
-          rsync -av --delete project/fintrek lokmanTech.github.io/fintrek/
+          rsync -av --delete fintrek/ lokmanTech.github.io/fintrek/
 
       - name: Commit and push changes
         run: |
