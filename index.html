@@ -1,430 +1,1081 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Developer + Analyst + Architect + Designer = Lokman Hakim">
+    <meta name="author" content="lokmantech">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Lokman Hakim Website</title>
+    <title>Lokman Hakim Portfolio</title>
 
-    <!-- Start Favicon-->
-    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
-    <!-- End Favicon -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <!-- Start Custom Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <!-- End Custom Google Font-->
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    
 
-    <!-- Start icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- End icons-->
+  </head>
+  <body>
 
-    <!-- Start CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
-    <!-- End CSS -->
-</head>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>Lokman Hakim</a>
 
-<body class="d-flex flex-column h-100">
-    <!-- Start Main Body -->
-    <main class="flex-shrink-0">
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Lokman Hakim</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./assets/resume/LokmanHakim_cv.pdf" target="_blank">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://github.com/lokmanTech" target="_blank">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- End Navigation -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Start Header-->
-        <header class="py-5">
-            <div class="container px-5 pb-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-xxl-5">
-                        <!-- Start Header text content-->
-                        <div class="text-center text-xxl-start">
-                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                <div class="text-uppercase">Data MGMT &middot; DB Admin &middot; Sys Optimization
-                                </div>
-                            </div>
-                            <div class="fs-3 fw-light text-muted">Let my groundbreaking solutions</div>
-                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">speak for themselves</span></h1>
-                            <div
-                                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
-                                    href="https://github.com/lokmanTech" target="_blank">Projects</a>
-                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-                                    href="./assets/resume/LokmanHakim_cv.pdf" target="_blank">Resume</a>
-                            </div>
-                        </div>
-                        <!-- End Header text content-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
                     </div>
-                    <div class="col-xxl-7">
-                        <!-- Start Header profile picture-->
-                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                            <div class="profile bg-gradient-primary-to-secondary">
-                                <img class="profile-img" src="img/profile/profile.png" alt="Lokman Hakim Photo" />
-                                <div class="dots-1">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-2">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-3">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-4">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Header profile picture -->
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- End Header -->
-
-        <!-- Start About-->
-        <section class="bg-light py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xxl-8">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Take a look
-                                    around</span></h2>
-                            <p class="lead fw-light mb-4">and see what I'm all about.</p>
-                            <div class="d-flex justify-content-center fs-2 gap-4">
-                                <a class="text-gradient" href="https://www.linkedin.com/in/lhakimnazri/" target="_blank"><i
-                                        class="bi bi-linkedin"></i></a>
-                                <a class="text-gradient" href="https://github.com/lokmanTech" target="_blank"><i
-                                        class="bi bi-github"></i></a>
-                                <!--<a class="text-gradient" href="https://www.behance.net/gallery/197526107/Lokmans-Architectural-Portfolio" target="_blank"><i
-                                        class="bi bi-behance"></i></a>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End About -->
-    </main>
-    <!-- End Main Body -->
-
-    <!-- Start Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; Lokman Hakim 2024</div>
-                </div>
-                <div class="col-auto">
-                    <a class="small" href="#">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="contact.html">Contact</a>
-                </div>
+                </ul>
             </div>
         </div>
-    </footer>
-    <!-- End Footer -->
+    </nav>
 
-    <!-- Start Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- End Bootstrap core JS-->
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Lokman</span>
+                                    <span class="animated-item">a Developer</span>
+                                    <span class="animated-item">a Analyst</span>
+                                </div>
+                        </h1>
 
-    <!-- Start JavaScript-->
-    <script src="js/scripts.js"></script>
-    <!-- End JavaScript-->
-</body>
+                        <p>Works with data and creates solutions to improve workflows and access to data. Uses SQL and Python for data tasks and 
+                          web tools like HTML, CSS, and JavaScript for interactive features.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="file/LokmanHakim_cv.pdf" target="_blank" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="#resume" class="btn custom-btn custom-btn-bg custom-btn-link">Get to know me</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                        <h2>What I have built</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+
+                        <div class="item">
+                          <div class="project-info">
+                            <a href="https://lokmantech.github.io/FinTrek/main.html" target="_blank">
+                              <img src="images/project/financial-analyis_project.jpg" class="lh-project-fluid-04" alt="FinTrek Project Image">
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <a href="https://lokmantech.github.io/AdvisorEase/" target="_blank">
+                              <img src="images/project/takaful_project.jpg" class="lh-project-fluid-03" alt="AdvisorEase Project Image">
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <a href="https://lokmantech.github.io/DailyChronicle/" target="_blank">
+                              <img src="images/project/journal_project.jpg" class="lh-project-fluid-02" alt="DailyChronicle Project Image">
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <a href="https://lokmantech.github.io/CalcLite/" target="_blank">
+                              <img src="images/project/CalcLite_project.jpg" class="lh-project-fluid-01" alt="CalcLite Project Image">
+                            </a>
+                          </div>
+
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2025</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Data Developer</span><small>Personal Project</small></h3>
+                                  <p style="text-align: justify;">Experienced in working with data and creating solutions to improve workflows 
+                                    and data access. Skilled in SQL and Python for data processing, and familiar with web technologies like HTML, 
+                                    CSS, and JavaScript to support interactive tools. Continuously learning to combine data analysis with software 
+                                    development.</p>
+                                  <p>Projects include:</p>
+                                  <li><a href="https://lokmantech.github.io/FinTrek/main.html" target="_blank">Personal Financial Analysis Project</a></li>
+                                  <li><a href="https://lokmantech.github.io/AdvisorEase/pages/takaful-insurance-advisor.html" target="_blank">Presentation Takaful Website Project</a></li>
+                                  <li><a href="https://lokmantech.github.io/DailyChronicle/" target="_blank">Journaling Project</a></li>
+                                  <li><a href="https://lokmantech.github.io/CalcLite/" target="_blank">Calculator Project</a></li>
+                             </div>
+                        </div>
+
+                <!-- Experience in Other Fields -->
+                  <h4 class="mt-5">Experience in Other Fields</h4>
+                  <div class="timeline other-experience">
+
+                    <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                        <span>6 years</span>
+                      </div>
+                      <div class="timeline-info">
+                        <h3>
+                          <span class="collapsible-toggle" onclick="toggleProjects(this)">
+                            <span class="toggle-icon">+</span> Design Architect
+                          </span>
+                          <small>(Building & Construction)</small>
+                        </h3>
+                        <ul class="project-list" style="display: none;">
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-14">Petronas Research 2</button>
+                            <div id="modal-exp04-14" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Petronas Research 2</h2>
+                                <p>Supported the construction and refurbishment of the Petronas Research Sdn. Bhd. Campus 2. Managed BIM Model 
+                                  Quality Control Procedures, ensuring all BIM submissions met the Employer’s Information Requirements (EIR). 
+                                  Coordinated with the CRSE BIM Manager and project teams to verify model accuracy, completeness, and compliance with 
+                                  project standards.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/10_PRSB2/PRSB-01.png" alt="lh_prsb2-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/10_PRSB2/PRSB-02.jpg" alt="lh_prsb2-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-13">Xanadu Sales Gallery</button>
+                            <div id="modal-exp04-13" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Xanadu Sales Gallery</h2>
+                                <p>Managed authorities-related matters and documentation for the Xanadu Sales Gallery project. 
+                                  Coordinated with local agencies to obtain necessary approvals and ensured compliance with regulations for 
+                                  smooth project delivery.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/09_XSG/XSG01.png" alt="lh_xsg-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/09_XSG/XSG02.jpg" alt="lh_xsg-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/09_XSG/XSG03.jpg" alt="lh_xsg-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/09_XSG/XSG04.jpg" alt="lh_xsg-04" style="max-width: 100%; height: auto;" loading="lazy">
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-12">Multipurpose Hall MBSJ</button>
+                            <div id="modal-exp04-12" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Multipurpose Hall MBSJ</h2>
+                                <p>Handled authorities’ submissions and approvals for the construction of a multipurpose hall under Majlis 
+                                  Bandaraya Subang Jaya (MBSJ). Coordinated documentation and ensured compliance with local building codes and 
+                                  regulations to support smooth project progression.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/08_MPH/03.jpeg" alt="lh_MPH-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/08_MPH/04.png" alt="lh_MPH-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-11">Lettricia Condo</button>
+                            <div id="modal-exp04-11" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Lettricia Condo</h2>
+                                <p>Prepared preliminary plans and concept designs for a residential condominium project. Coordinated initial 
+                                  site analysis, zoning review, and feasibility studies to support project development. Assisted in preparing 
+                                  documents for authorities’ submission and approval.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/07_LC/002.jpg" alt="lh_lc-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/07_LC/003.jpg" alt="lh_lc-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/07_LC/004.jpg" alt="lh_lc-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/07_LC/005.jpg" alt="lh_lc-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/07_LC/006.jpg" alt="lh_lc-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/07_LC/007.jpg" alt="lh_lc-06" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-10">Alton Mixed-Type Dev</button>
+                            <div id="modal-exp04-10" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Alton Mixed-Type Dev</h2>
+                                <p>Managed all authorities-related matters for a factory development project, including obtaining planning 
+                                  approvals, coordinating submissions, and ensuring compliance with local regulations. Acted as the main liaison 
+                                  between the project team and government agencies to facilitate smooth progress and timely permits.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/06_alton-mix-dev/008.jpg" alt="lh_amd_01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/06_alton-mix-dev/009.jpg" alt="lh_amd_02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/06_alton-mix-dev/010.jpg" alt="lh_amd_03" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-09">Heap Wah Warehouse</button>
+                            <div id="modal-exp04-09" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Heap Wah Warehouse</h2>
+                                <p>Designed and developed a functional warehouse facility to support Heap Wah Enterprise’s logistics and storage 
+                                  operations. The project included planning efficient layout for loading and unloading bays, optimized internal 
+                                  circulation for forklifts and vehicles, and integration of office and staff amenities. </p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/05_heap-wah_warehouse/011.jpg" alt="lh_hw-warehouse-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/05_heap-wah_warehouse/012.jpg" alt="lh_hw-warehouse-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/05_heap-wah_warehouse/013.jpg" alt="lh_hw-warehouse-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/05_heap-wah_warehouse/014.jpg" alt="lh_hw-warehouse-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/05_heap-wah_warehouse/015.jpg" alt="lh_hw-warehouse-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/05_heap-wah_warehouse/016.jpg" alt="lh_hw-warehouse-06" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-08">Mixed-type Factory Dev</button>
+                            <div id="modal-exp04-08" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Mixed-Type Factory Dev</h2>
+                                <p>An ongoing project involving the design and construction of a factory building with an integrated warehouse. 
+                                  I assist with architectural drawings, consultant coordination, and authority submissions. I also support the 
+                                  team with design updates and site-related matters.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/04_mix-type_factory/017.jpg" alt="lh_mtfd-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/04_mix-type_factory/018.jpg" alt="lh_mtfd-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-07">Nova FRP Warehouse</button>
+                            <div id="modal-exp04-07" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Nova FRP Warehouse</h2>
+                                <p>Nova FRP Warehouse is an industrial facility designed for the production and storage of fiberglass-reinforced 
+                                  plastic (FRP) products. Located in Semenyih, the warehouse includes factory space, office areas, and utility zones 
+                                  tailored for manufacturing operations.</p>
+                                <p>I was involved throughout the project, from design development to final construction. 
+                                  My responsibilities included preparing architectural drawings, coordinating with engineering consultants, 
+                                  ensuring compliance with industrial building regulations, and supporting local authority submissions. I also 
+                                  provided on-site architectural support and managed drawing revisions based on site conditions and client 
+                                  requirements.</p>
+                                <p>project helped me strengthen my skills in industrial design, project coordination, and detailed architectural 
+                                  documentation for manufacturing environments.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/03_nova-FRP/019.jpg" alt="lh_nv-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/03_nova-FRP/020.jpg" alt="lh_nv-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/03_nova-FRP/021.jpg" alt="lh_nv-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/03_nova-FRP/022.jpg" alt="lh_nv-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/03_nova-FRP/023.jpg" alt="lh_nv-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/03_nova-FRP/024.jpg" alt="lh_nv-06" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/03_nova-FRP/025.jpg" alt="lh_nv-07" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-06">Cainiao KLIA Warehouse</button>
+                            <div id="modal-exp04-06" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Cainiao KLIA Mega-Warehouse</h2>
+                                <p>This project involved the full development of Cainiao’s Megawarehouse at KLIA under the eWTP (Electronic World Trade Platform) 
+                                  initiative—a strategic joint venture between Malaysia Airports and Alibaba Group. I was involved from the initial design stage to 
+                                  project completion. The facility includes over 1.1 million sq ft of advanced warehouse space, integrated customs clearance areas, and 
+                                  high-efficiency sorting and logistics zones.</p>
+
+                                <p>My responsibilities covered architectural design coordination, authority submissions, BIM model development 
+                                  and quality control, technical detailing, and multi-discipline coordination across consultants and stakeholders. 
+                                  I also assisted in ensuring smooth compliance with airport development guidelines and supported on-site 
+                                  architectural clarifications during the construction phase.</p>
+
+                                <p>This project strengthened my experience in large-scale logistics facilities, fast-track developments, BIM 
+                                  implementation, and multi-stakeholder project delivery.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/026.jpg" alt="lh_caKLIA-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/027.jpg" alt="lh_caKLIA-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/028.jpg" alt="lh_caKLIA-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/029.jpg" alt="lh_caKLIA-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/030.jpg" alt="lh_caKLIA-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/031.jpg" alt="lh_caKLIA-06" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/032.jpg" alt="lh_caKLIA-07" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/033.jpg" alt="lh_caKLIA-08" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/034.jpg" alt="lh_caKLIA-09" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/035.jpg" alt="lh_caKLIA-10" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/036.jpg" alt="lh_caKLIA-11" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/02_caniao-KLIA/037.jpg" alt="lh_caKLIA-12" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-05">Basic 8 Factory</button>
+                            <div id="modal-exp04-05" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Basic 8 Factory</h2>
+                                <p>An industrial complex designed for medium businesses. I was involved in preparing architectural 
+                                  drawings, coordinating with consultants, and ensuring the design met local authority requirements. 
+                                  This project improved my skills in industrial building design and teamwork.p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/044.jpg" alt="lh_b8-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/045.jpg" alt="lh_b8-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/046.jpg" alt="lh_b8-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/047.jpg" alt="lh_b8-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/048.jpg" alt="lh_b8-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/049.jpg" alt="lh_b8-06" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/050.jpg" alt="lh_b8-07" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/051.jpg" alt="lh_b8-08" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/052.jpg" alt="lh_b8-09" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/053.jpg" alt="lh_b8-10" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/02_architect/01_basic-8/054.jpg" alt="lh_b8-11" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-04">Yusliza's ID Renovation</button>
+                            <div id="modal-exp04-04" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Yusliza's ID Renovation</h2>
+                                <p>Redesigned the exterior façade of Mdm Yusliza’s bungalow, focusing on enhancing the building’s curb appeal 
+                                  with updated architectural elements, material finishes, and a refreshed visual identity while maintaining harmony 
+                                  with the original structure.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/01_id/mdm-yusliza_bungalow/059.jpg" alt="lh_id_myb_01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/mdm-yusliza_bungalow/060.jpg" alt="lh_id_myb_02" style="max-width: 100%; height: auto;" loading="lazy">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-03">Dida's Condo ID Renovation</button>
+                            <div id="modal-exp04-03" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Dida's Condo ID Renovation</h2>
+                                <p>Led the renovation and interior design of a residential condominium unit for Mdm Dida. The project involved 
+                                  reconfiguring the space layout, selecting new finishes and furnishings, and enhancing the overall aesthetic to 
+                                  create a modern, cozy, and functional living environment tailored to the client’s lifestyle.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/01_id/mdm-dida_condo/061.jpg" alt="lh_id-mdc-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/mdm-dida_condo/062.jpg" alt="lh_id-mdc-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/mdm-dida_condo/063.jpg" alt="lh_id-mdc-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/mdm-dida_condo/064.jpg" alt="lh_id-mdc-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-02">Johawaki Hotel ID Project</button>
+                            <div id="modal-exp04-02" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Johawaki Hotel ID Project</h2>
+                                <p>Designed the complete interior for a hotel unit at Johawaki Hotel, including space planning, furniture layout, 
+                                  material selection, and overall aesthetic concept. The design focused on creating a comfortable and welcoming 
+                                  atmosphere suitable for short-term and long-term stays, while aligning with the hotel’s branding and functional needs.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/01_id/hotel-johawaki/055.jpg" alt="lh_hj-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/hotel-johawaki/056.jpg" alt="lh_hj-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/hotel-johawaki/057.jpg" alt="lh_hj-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/hotel-johawaki/058.jpg" alt="lh_hj-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp04-01">Hamzah's Penthouse Renovation</button>
+                            <div id="modal-exp04-01" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Dato Hamzah Penthouse Renovation</h2>
+                                <p>Experience luxury living in the beautifully renovated Dato Hamzah Penthouse, where every detail has been 
+                                  thoughtfully upgraded. This fully interior-renovated unit features a modern and elegant design, blending 
+                                  functionality with high-end finishes. From the spacious living areas to the refined bedrooms, each space has been 
+                                  meticulously crafted to provide comfort and style. Perfect for those seeking a move-in-ready home with a contemporary 
+                                  touch in one of the city’s most sought-after locations.</p>
+                                <p style="height: 200%;"></p>
+                                <p>
+                                  <img src="images/exp/design_arch/01_id/dato-hamzah/065.jpg" alt="lh_dh-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/dato-hamzah/066.jpg" alt="lh_dh-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                  <img src="images/exp/design_arch/01_id/dato-hamzah/067.jpg" alt="lh_dh-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                        <span>2 years</span>
+                      </div>
+                      <div class="timeline-info">
+                        <h3>
+                          <span class="collapsible-toggle" onclick="toggleProjects(this)">
+                            <span class="toggle-icon">+</span> Production Executive
+                          </span>
+                          <small>Manufacturing</small>
+                        </h3>
+                        <ul class="project-list" style="display: none;">
+                          <li>
+                            <button class="link-button" data-modal="modal-exp03-03">HACCP auditing management</button>
+                            <div id="modal-exp03-03" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">HACCP auditing management</h2>
+                                <p>Learn containerization to simplify deployment and improve scalability.</p>
+                                <p style="height: 800px;">Scroll down for more content...</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp03-02">Operation Upgrading Management</button>
+                            <div id="modal-exp03-02" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Operation Upgrading Management</h2>
+                                <p>Learn containerization to simplify deployment and improve scalability.</p>
+                                <p style="height: 800px;">Scroll down for more content...</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp03-01">Logistics Improvement Process</button>
+                            <div id="modal-exp03-01" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Logistics Improvement Process</h2>
+                                <p>Learn containerization to simplify deployment and improve scalability.</p>
+                                <p style="height: 800px;">Scroll down for more content...</p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                        <span>2 years</span>
+                      </div>
+                      <div class="timeline-info">
+                        <h3>
+                          <span class="collapsible-toggle" onclick="toggleProjects(this)">
+                            <span class="toggle-icon">+</span> Real Estate Negotiator
+                          </span>
+                          <small></small>
+                        </h3>
+                        <ul class="project-list" style="display: none;">
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp02-02">Client Risk Assessment</button>
+                            <div id="modal-exp02-02" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Client Risk Assessment</h2>
+                                <p>Learn containerization to simplify deployment and improve scalability.</p>
+                                <p style="height: 800px;">Scroll down for more content...</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp02-01">Policy Recommendation Framework</button>
+                            <div id="modal-exp02-01" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Policy Recommendation Framework</h2>
+                                <p>Learn containerization to simplify deployment and improve scalability.</p>
+                                <p style="height: 800px;">Scroll down for more content...</p>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                        <span>1 year</span>
+                      </div>
+                      <div class="timeline-info">
+                        <h3>
+                          <span class="collapsible-toggle" onclick="toggleProjects(this)">
+                            <span class="toggle-icon">+</span> Insurance Advisor
+                          </span>
+                          <small>Takaful</small>
+                        </h3>
+                        <ul class="project-list" style="display: none;">
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp01-02">Client Risk Assessment</button>
+                            <div id="modal-exp01-02" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Client Risk Assessment</h2>
+                                <p>Learn containerization to simplify deployment and improve scalability.</p>
+                                <p style="height: 800px;">Scroll down for more content...</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li>
+                            <button class="link-button" data-modal="modal-exp01-01">Policy Recommendation Framework</button>
+                            <div id="modal-exp01-01" class="modal">
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2 style="text-align: center;">Policy Recommendation Framework</h2>
+                                <p>Learn containerization to simplify deployment and improve scalability.</p>
+                                <p style="height: 800px;">Scroll down for more content...</p>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                                
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2025</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Computer Science</span><small>certification</small></h3>
+                                  <p style="text-align: justify;">Currently pursuing back-end developer certifications to build skills in API development, database management, 
+                                    automation, and cloud platforms like AWS and Docker. Focused on developing the ability to create scalable and 
+                                    efficient backend solutions that support reliable applications and improve business processes.</p>
+                                    
+                                  <li>
+                                    <button class="link-button" data-modal="modal-edu03-05">IT Professional Cert (Soon)</button>
+                                    <div id="modal-edu03-05" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2 style="text-align: center;">Google IT Automation with Python Professional Certificate</h2>
+                                        <p>Master Python and automation skills — the backbone of back-end development.</p>
+                                        <p style="height: 800px;">Scroll down for more content...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <button class="link-button" data-modal="modal-edu03-04">AWS Certified Dev (Soon)</button>
+                                    <div id="modal-edu03-04" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2 style="text-align: center;">AWS Certified Developer – Associate</h2>
+                                        <p>Learn to deploy and manage back-end apps in the cloud — critical for modern dev work.</p>
+                                        <p style="height: 800px;">Scroll down for more content...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  
+                                  <li>
+                                    <button class="link-button" data-modal="modal-edu03-03">PostgreSQL Cert (Soon)</button>
+                                    <div id="modal-edu03-03" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2 style="text-align: center;">PostgreSQL for Everybody Specialization</h2>
+                                        <p>Deep SQL and database knowledge is essential for back-end data handling.</p>
+                                        <p style="height: 800px;">Scroll down for more content...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <button class="link-button" data-modal="modal-edu03-02">Python Cert (Soon)</button>
+                                    <div id="modal-edu03-02" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2 style="text-align: center;">The Complete Python Developer Certification</h2>
+                                        <p>Comprehensive Python and framework skills to build robust back-end apps.</p>
+                                        <p style="height: 800px;">Scroll down for more content...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <button class="link-button" data-modal="modal-edu03-01">Docker Cert (Soon)</button>
+                                    <div id="modal-edu03-01" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2 style="text-align: center;">Docker for Developers</h2>
+                                        <p>Learn containerization to simplify deployment and improve scalability.</p>
+                                        <p style="height: 800px;">Scroll down for more content...</p>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2023</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Cloud Foundation</span><small>certification</small></h3>
+                                <p style="text-align: justify;">Built foundational skills in cloud computing and data analytics. Covered data lifecycle, basic visualization, and cloud-based data tools.</p>
+                                <li><a href="https://www.credly.com/badges/87fb9d96-6856-4b65-b052-0c60ba687e5c/public_url" target="_blank">AWS re/Start Programme</a></li>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2017</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span class="collapsible-toggle" onclick="toggleProjects(this)">
+                                    <span class="toggle-icon">+</span> Architectural Studies
+                                  </span>
+                                    <small>degree</small>
+                                      <p style="text-align: justify;">Completed a LAM Part 1 accredited degree focused on architectural design, construction methods, 
+                                          and environmental planning.</p>
+                                </h3>
+                                    <ul class="project-list" style="display: none;">
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-10">Project Measured Drawing</button>
+                                        <div id="modal-edu01-10" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Measuring Masjid Pondok Tinggi, Jambi, Indonesia</h2>
+                                            <p>Detailed architectural documentation of a historic mosque, highlighting traditional Indonesian timber construction and spatial planning.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/083.jpg" alt="lh_md-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/084.jpg" alt="lh_md-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/085.jpg" alt="lh_md-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/086.jpg" alt="lh_md-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/087.jpg" alt="lh_md-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/088.jpg" alt="lh_md-06" style="max-width: 100%; height: auto;" loading="lazy"> 
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/089.jpg" alt="lh_md-07" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/090.jpg" alt="lh_md-08" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/091.jpg" alt="lh_md-09" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/092.jpg" alt="lh_md-10" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/093.jpg" alt="lh_md-11" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/094.jpg" alt="lh_md-12" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/095.jpg" alt="lh_md-13" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/096.jpg" alt="lh_md-14" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/097.jpg" alt="lh_md-15" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/098.jpg" alt="lh_md-16" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/07_measured-drawing/099.jpg" alt="lh_md-17" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p> 
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-09">Project Planetarium</button>
+                                        <div id="modal-edu01-09" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Planetarium Project</h2>
+                                            <p>Conceptual planetarium featuring interactive exhibits and celestial design, encouraging science education in urban Johor Bahru.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/06_planetarium/121.jpg" alt="lh_planet-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/06_planetarium/122.jpg" alt="lh_planet-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/06_planetarium/123.jpg" alt="lh_planet-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/06_planetarium/124.jpg" alt="lh_planet-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/06_planetarium/125.jpg" alt="lh_planet-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-08">Project Cultured Gallery</button>
+                                        <div id="modal-edu01-08" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Cultured Gallery Project</h2>
+                                            <p>An art gallery concept celebrating local heritage, strategically placed along Kinta River for public engagement and cultural appreciation.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/05_cultured-gallery/127.jpg" alt="lh_cg-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/05_cultured-gallery/128.jpg" alt="lh_cg-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/05_cultured-gallery/129.jpg" alt="lh_cg-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/05_cultured-gallery/130.jpg" alt="lh_cg-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/05_cultured-gallery/131.jpg" alt="lh_cg-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-07">Project Cultured Sport Center</button>
+                                        <div id="modal-edu01-07" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Cultured Sport Center Project</h2>
+                                            <p>A community sports hub at Gelanggang Seni, blending traditional Kelantanese culture with modern recreational facilities.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/04_cultured-sport-center/142.jpg" alt="lh_csc-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/04_cultured-sport-center/143.jpg" alt="lh_csc-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/04_cultured-sport-center/144.jpg" alt="lh_csc-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/04_cultured-sport-center/145.jpg" alt="lh_csc-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/04_cultured-sport-center/146.jpg" alt="lh_csc-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-06">Project Backpacker Lodge</button>
+                                        <div id="modal-edu01-06" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Backpacker Lodge Project</h2>
+                                            <p>Designed a riverside lodge for budget travelers, integrating sustainable materials and views of Sungai Kedah.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/03_backpacker-lodge/148.jpg" alt="lh_bp-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/03_backpacker-lodge/149.jpg" alt="lh_bp-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/03_backpacker-lodge/150.jpg" alt="lh_bp-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/03_backpacker-lodge/151.jpg" alt="lh_bp-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p> 
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-05">Project Villa</button>
+                                        <div id="modal-edu01-05" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Private Villa</h2>
+                                            <p>Designed a luxury villa focusing on functional layout, aesthetic appeal, and seamless indoor-outdoor 
+                                              living. Created detailed floor plans, 3D models, and material selections emphasizing natural light and 
+                                              sustainability.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/02_villa/140.jpg" alt="lh_v-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/152.jpg" alt="lh_v-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/159.jpg" alt="lh_v-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/160.jpg" alt="lh_v-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/100.jpg" alt="lh_v-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/101.jpg" alt="lh_v-06" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/102.jpg" alt="lh_v-07" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/103.jpg" alt="lh_v-08" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/104.jpg" alt="lh_v-09" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/105.jpg" alt="lh_v-10" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/106.jpg" alt="lh_v-11" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/107.jpg" alt="lh_v-12" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/108.jpg" alt="lh_v-13" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/109.jpg" alt="lh_v-14" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/110.jpg" alt="lh_v-15" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/111.jpg" alt="lh_v-16" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/112.jpg" alt="lh_v-17" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/113.jpg" alt="lh_v-18" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/114.jpg" alt="lh_v-19" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/115.jpg" alt="lh_v-20" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/116.jpg" alt="lh_v-21" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/117.jpg" alt="lh_v-22" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/118.jpg" alt="lh_v-23" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/02_villa/tech-dwg/119.jpg" alt="lh_v-24" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-04">Project Private Retreat</button>
+                                        <div id="modal-edu01-04" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Private Retreat Project</h2>
+                                            <p>Designed a conceptual private retreat focused on minimalism and environmental harmony. 
+                                              Developed site analysis, schematic design, and 3D visualization. Emphasized passive design 
+                                              strategies and user-centric spatial planning to enhance comfort and sustainability.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/01_private-retreat/155.jpg" alt="lh_pr-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/01_private-retreat/156.jpg" alt="lh_pr-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/01_private-retreat/157.jpg" alt="lh_pr-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-03">Folly Counter Project</button>
+                                        <div id="modal-edu01-03" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Folly Counter Project</h2>
+                                            <p>Conceptual design of a folly structure serving as a public counter, merging aesthetic experimentation with functional urban interaction.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/00_extras/folly-counter/161a.jpg" alt="lh_fc-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/folly-counter/162.jpg" alt="lh_fc-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-02">Academic Side Project</button>
+                                        <div id="modal-edu01-02" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">Academic Side Project</h2>
+                                            <p>Independent architectural studies exploring design concepts, sustainability, and cultural integration beyond core coursework.</p>
+                                            <p style="height: 200%;"></p>
+                                            <h3 style="text-align: center;">History Class</h3>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/00_extras/history/118.jpg" alt="lh_history-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/history/119.jpg" alt="lh_history-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                            <h3 style="text-align: center;">IIUM Gallery</h3>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/00_extras/IIUM-gallery/135.jpg" alt="lh_gallery-IIUM-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/IIUM-gallery/136.jpg" alt="lh_gallery-IIUM-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/IIUM-gallery/137.jpg" alt="lh_gallery-IIUM-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/IIUM-gallery/138.jpg" alt="lh_gallery-IIUM-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                            <h3 style="text-align: center;">Pr1ma Competition</h3>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/00_extras/pr1ma-competition/132.jpg" alt="lh_pr1ma-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/pr1ma-competition/133.jpg" alt="lh_pr1ma-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/pr1ma-competition/134.jpg" alt="lh_pr1ma-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                            <h3 style="text-align: center;">Rumah Melayu Perak Measured Drawing</h3>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/068.jpg" alt="lh_md-rmp-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/069.jpg" alt="lh_md-rmp-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/070.jpg" alt="lh_md-rmp-03" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/071.jpg" alt="lh_md-rmp-04" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/072.jpg" alt="lh_md-rmp-05" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/073.jpg" alt="lh_md-rmp-06" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/074.jpg" alt="lh_md-rmp-07" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/075.jpg" alt="lh_md-rmp-08" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/076.jpg" alt="lh_md-rmp-09" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/077.jpg" alt="lh_md-rmp-10" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/078.jpg" alt="lh_md-rmp-11" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/079.jpg" alt="lh_md-rmp-12" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/080.jpg" alt="lh_md-rmp-13" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/081.jpg" alt="lh_md-rmp-14" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/rumah-melayu-perak/082.jpg" alt="lh_md-rmp-15" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <button class="link-button" data-modal="modal-edu01-01">High School Project - Cup</button>
+                                        <div id="modal-edu01-01" class="modal">
+                                          <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <h2 style="text-align: center;">High School Project - Cup</h2>
+                                            <p>High school art project designing creative illustrations on ceramic cups, exploring form, color, and storytelling through everyday objects.</p>
+                                            <p style="height: 200%;"></p>
+                                            <p>
+                                              <img src="images/edu/01_arch_studies/00_extras/cup/163.jpg" alt="lh_cup-01" style="max-width: 100%; height: auto;" loading="lazy">
+                                              <img src="images/edu/01_arch_studies/00_extras/cup/164.jpg" alt="lh_cup-02" style="max-width: 100%; height: auto;" loading="lazy">
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                    </ul>
+                                                               
+                              </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.0373741275!2d101.7018436!3d3.157764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d02f691d87%3A0x3cf0b0a5e3507edc!2sKuala%20Lumpur%20City%20Centre%20(KLCC)!5e0!3m2!1sen!2smy!4v1715929500000" loading="lazy" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p><a href="mailto:lhakim.nazri@gmail.com">lhakim.nazri@gmail.com</a></p>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+
+              <form action="https://formspree.io/f/mblowovb" method="POST">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                  </div>
+
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2025 Lokman Hakim. All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://linkedin.com/in/lhakimnazri">Lokman Hakim</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/lh_toggle.js"></script>
+    <script src="js/lh_popup.js"></script>
+
+
+  </body>
 </html>
